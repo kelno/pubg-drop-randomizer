@@ -57,7 +57,7 @@ export const pubgMaps: PUBGMap[] = [
   {
     id: 'rondo',
     name: 'Rondo',
-    size: 16,
+    size: 8,
     image: 'maps/rondo.webp',
   },
 ];
