@@ -10,7 +10,7 @@ export const pubgMaps: PUBGMap[] = [
     id: 'erangel',
     name: 'Erangel',
     size: 8,
-    image: 'maps/erangel.jpg',
+    image: 'maps/erangel.webp',
   },
   {
     id: 'miramar',
