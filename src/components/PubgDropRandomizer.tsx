@@ -48,7 +48,7 @@ export const PubgDropRandomizer: React.FC<PubgDropRandomizerProps> = () => {
           {/* X axis labels grid */}
 
           {/* Map grid */}
-          <div className="flex-grow w-full flex flex-col">
+          <div className="aspect-square flex-grow flex flex-col">
             {" "}
             <div
               className="grid mt-4 w-full"
@@ -68,17 +68,17 @@ export const PubgDropRandomizer: React.FC<PubgDropRandomizerProps> = () => {
                 </div>
               ))}
             </div>
-            <div className="aspect-square relative flex-grow">
+            <div className="aspect-square relative">
               {selectedMap.image && (
                 <img
-                  src={selectedMap.image}
+                  src={`${window.location.pathname}${selectedMap.image}`}
                   alt={selectedMap.name}
                   className="absolute w-full h-full object-cover inset-0"
                   style={{ zIndex: 0 }}
                 />
               )}
               <div
-                className="absolute inset-0 grid "
+                className="inset-0 grid w-full h-full"
                 style={{
                   gridTemplateColumns: `repeat(${selectedMap.size}, 1fr)`,
                   gridTemplateRows: `repeat(${selectedMap.size}, 1fr)`,
