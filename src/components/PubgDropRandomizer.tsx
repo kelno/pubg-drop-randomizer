@@ -71,7 +71,7 @@ export const PubgDropRandomizer: React.FC<PubgDropRandomizerProps> = () => {
             <div className="aspect-square relative">
               {selectedMap.image && (
                 <img
-                  src={`${window.location.pathname}${selectedMap.image}`}
+                  src={`${window.location.pathname}/${selectedMap.image}`}
                   alt={selectedMap.name}
                   className="absolute w-full h-full object-cover inset-0"
                   style={{ zIndex: 0 }}
