@@ -20,11 +20,11 @@ export const getRandomCoordinate = (size: number): Coordinates => {
 };
 
 export const convertToLetterAxisX = (x: number): string => {
-  return String.fromCharCode(65 + x);
+  return String.fromCharCode(65 + x); // A
 }
 
 export const convertToLetterAxisY = (y: number): string => {
-  return String.fromCharCode(111 + y);
+  return String.fromCharCode(73 + y); // I
 }
 
 // Convert numerical coordinates to letter-based coordinates
