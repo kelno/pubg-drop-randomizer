@@ -21,7 +21,7 @@ export const pubgMaps: PUBGMap[] = [
   {
     id: 'sanhok',
     name: 'Sanhok',
-    size: 16,
+    size: 4,
     image: 'maps/sanhok.webp',
   },
   {

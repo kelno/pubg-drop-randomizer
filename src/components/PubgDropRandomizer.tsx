@@ -17,7 +17,7 @@ export const PubgDropRandomizer: React.FC<PubgDropRandomizerProps> = () => {
 
   const randomCoordinatesText =
     randomCoordinate && selectedMap
-      ? convertToLetterCoordinate(randomCoordinate, selectedMap.size)
+      ? convertToLetterCoordinate(randomCoordinate)
       : "?";
 
   return (

@@ -23,13 +23,13 @@ export const convertToLetterAxisX = (x: number): string => {
   return String.fromCharCode(65 + x);
 }
 
-export const convertToLetterAxisY = (y: number, sizeX: number): string => {
-  return String.fromCharCode(65 + (sizeX + y));
+export const convertToLetterAxisY = (y: number): string => {
+  return String.fromCharCode(111 + y);
 }
 
 // Convert numerical coordinates to letter-based coordinates
-export const convertToLetterCoordinate = (coordinates: Coordinates, sizeX: number): string => {
-  const result = `${convertToLetterAxisX(coordinates.x)}${convertToLetterAxisY(coordinates.y, sizeX)}`
+export const convertToLetterCoordinate = (coordinates: Coordinates): string => {
+  const result = `${convertToLetterAxisX(coordinates.x)}${convertToLetterAxisY(coordinates.y)}`
   //console.debug('convertToLetterCoordinate:', coordinates, sizeX, result);;
   return result;
 };
